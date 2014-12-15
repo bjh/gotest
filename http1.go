@@ -14,7 +14,7 @@ func main() {
 	router.HandleFunc("/", Index)
 	router.HandleFunc("/slideshow/{id}/{width}/{height}", SlideShow)
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":80", router))
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {
